@@ -1,0 +1,203 @@
+/* body met de dingen die in heel de website worden aangehouden,
+dus de margin enzo zodat het allemaal hetzelfde word. */
+
+body {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* navigatie over de taal. NL/ENG/DE */
+
+header nav ul {
+list-style-type: none;
+margin: 1em;
+padding: 0;
+display: flex;
+justify-content: end;
+
+}
+
+/* de navigatie kleur, lijn weg en punten weg en zwarte kleur */
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+
+/* afbeeldingen worden geschaald naar het formaat en word in het midden gezet
+reden van display block is, omdat afbeelding standaard op block inline staat, dus in
+dit geval inline met de navigatie dus nu haal je m door de block uit de inline en word op zichzelf neer gezet */
+
+img {
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    display: block;
+  
+}
+
+/* de navigatie word hier ook weer veranderd, dus lijntje etc word weg gehaald. 
+en vervolgens word alles onder elkaar gezet */
+
+main li {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nav krijgt een kleur, maar dan gaat het op dit moment om de borden en padding en de margin
+dat dat een kleur krijgt */
+
+main ul li {
+    border: 0.1em solid #9A805B;
+    background-color: #9A805B;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+/* de nav word aangepast, in dit gaval word er padding aan toegevoegd. Maar word er 0
+ingevoerd zodat het aan de zijkant blijft */
+
+ul {
+    padding: 0;
+}
+
+/* footer krijgt een kleur */
+
+footer {
+
+    background-color:  #9A805B;
+    display: flex;
+    justify-content: center;
+}
+
+/* JOBS */
+
+h1, p {
+    text-align: center;
+}
+
+main {
+    margin: .5em;
+}
+
+p:nth-of-type(2) {
+    text-align: left;
+}
+
+p:nth-of-type(3) {
+    text-align: left;
+}
+
+section label {
+    display: block;
+    float: top;
+
+}
+
+section input {
+    width: 27em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* img:first-of-type {
+
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0;
+
+}
+
+nav:nth-child(1) { 
+    list-style-type: none;
+    display: inline;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+nav:nth-child(2)
+
+nav:nth-of-child(2) { 
+    list-style-type: none;
+    display: inline;
+    justify-content: space-around;
+    margin-left: 20px;
+
+}
+
+nav:first-of-type {
+    text-align: right;
+
+}
+
+nav:nth-of-type(2) {
+    text-align: center;
+
+}
+
+in het algemeen de navigatie naast elkaar gezet, ook NL, ENG en DE
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/**/ 
