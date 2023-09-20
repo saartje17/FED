@@ -8,18 +8,30 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #EEEDE7;
 }
+
+header {
+    background-color: white;
+}
+
+
 
 /* navigatie over de taal. NL/ENG/DE */
 
-header nav ul {
-list-style-type: none;
-margin: 1em;
-padding: 0;
-display: flex;
-justify-content: end;
+header nav {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    margin: .5em;
+}
+
+nav section:first-of-type img {
+    scale: 100%;
 
 }
+section a:hover {
+    background-color: #9A805B;}
 
 /* de navigatie kleur, lijn weg en punten weg en zwarte kleur */
 
@@ -82,7 +94,16 @@ footer {
 
 /* JOBS */
 
-h1, p {
+/* afbeelding, grid */
+main > section:first-of-type {
+    background-color: #9A805B;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 0.3em;
+}
+
+/* kop tekst en de tekst eronder */
+h2, p {
     text-align: center;
 }
 
@@ -90,25 +111,95 @@ main {
     margin: .5em;
 }
 
+/* formulier */
+
 p:nth-of-type(2) {
     text-align: left;
 }
 
 p:nth-of-type(3) {
     text-align: left;
+
+}
+
+p:nth-of-type(4) {
+    text-align: left;
+
+}
+
+label, input {
+    margin-top: .2em;
 }
 
 section label {
     display: block;
     float: top;
-
 }
+
 
 section input {
-    width: 27em;
+    width: 26em;
+    border-radius: 0.9em;
+    padding: 0.5em;
+}
+
+main section:nth-of-type(3) input:last-of-type {
+    background-color: #5CB85C;
+    border: #5CB85C;
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: .8em;
+    padding: 1em;
+    width: 16em;
+    border-radius: .7em;
+    color: white;
+    font-size: medium;
+    
+}
+main section:nth-of-type(3) input:last-of-type:hover {
+    animation-name: button;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    background-color: green;
+    transform-origin: 10%;
 }
 
 
+
+@keyframes button{
+    100% {
+        scale: 1.2;
+    }
+}
+
+
+/* footer. Home & Jobs */
+
+footer h2, footer h3 {
+    text-align: center;
+    color: white;
+
+}
+
+footer h3 {
+    font-size: medium;
+    margin: .5em;
+}
+
+
+footer img {
+    text-align: center;
+    display: block;
+    width: 2em;
+    height: auto;
+}
+
+footer h2:nth-of-type(2) img {
+    text-align: center;
+    display: block;
+    width: 10em;
+    height: auto;
+}
 
 
 
